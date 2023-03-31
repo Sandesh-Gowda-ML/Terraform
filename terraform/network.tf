@@ -1,17 +1,17 @@
 resource "aws_vpc" "vpc1" {
-  cidr_block = "${var.vpcCidr}"
+  cidr_block = "${var.vpc_cidr}"
 
   tags = {
-    Name = "${var.vpcName}"
+    Name = "${var.vpc_name}"
   }
 }
 
 resource "aws_subnet" "subnet1" {
   vpc_id     = "${aws_vpc.vpc1.id}"
-  cidr_block = "${var.subnetCidr}"
+  cidr_block = "${var.subnet_cidr}"
 
   tags = {
-    Name = "${var.subnetName}"
+    Name = "${var.subnet_name}"
   }
 }
 

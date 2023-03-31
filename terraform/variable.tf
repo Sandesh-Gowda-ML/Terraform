@@ -1,9 +1,9 @@
-variable size1 {
+variable disk1_size {
   default     = ""
   description = "Size of volume 1"
 }
 
-variable size2 {
+variable disk2_size {
   default     = ""
   description = "Size of volume 2"
 }
@@ -28,32 +28,32 @@ variable instance_name {
   description = "Name of the EC2 instance"
 }
 
-variable disk1Name {
+variable disk1_name {
   default     = ""
   description = "Name of the Disk1"
 }
 
-variable disk2Name {
+variable disk2_name {
   default     = ""
   description = "Name of the Disk2"
 }
 
-variable vpcName {
+variable vpc_name {
   default     = ""
   description = "name of the VPC"
 }
 
-variable vpcCidr {
+variable vpc_cidr {
   default     = ""
   description = "CIDR value for VPC"
 }
 
-variable subnetCidr {
+variable subnet_cidr {
   default     = ""
   description = "CIDR value for SUBNET"
 }
 
-variable subnetName {
+variable subnet_name {
   default     = ""
   description = "name of the VPC"
 }
