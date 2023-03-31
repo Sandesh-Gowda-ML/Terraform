@@ -1,0 +1,13 @@
+size1 = 8
+size2 = 1
+region = "us-east-1"
+ami = "ami-033adaf0b583374d4"
+instance_type = "t3.micro"
+instance_name = "EC2_Test"
+disk1Name="Volume1"
+disk2Name="Volume2"
+vpcName="EC2_VPC"
+vpcCidr="10.0.0.0/16"
+subnetCidr="10.0.1.0/24"
+subnetName="EC2_SUBNET"
+network_interface="primary_network_interface"
