@@ -1,4 +1,4 @@
-#Terraform Introduction
+#   Terraform Introduction
     Provider.tf : Defines the provider to be used and the credentials to access the provider.
     config.tf : Used to connect to S3 Bucket and upload the necessary files to S3 Bucket.
     network.tf : Used to define all the netwrok resources like VPC, SUBNET and NETWORK_INTERFACE.
