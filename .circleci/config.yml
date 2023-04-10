@@ -15,7 +15,7 @@ workflows:
       - terraform/plan:
           checkout: true
           context: terraform
-          path: .
+          path: ./Terraform/terraform/
           persist-workspace: true
           requires:
             - terraform/validate
