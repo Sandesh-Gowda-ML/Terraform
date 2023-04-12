@@ -4,6 +4,8 @@ orbs:
 workflows:
   deploy_infrastructure:
     jobs:
+      - terraform/init:
+          path: .
       - terraform/fmt:
           checkout: true
           context: terraform
