@@ -17,6 +17,7 @@ workflows:
           context: terraform
           path: terraform
           persist-workspace: true
+          backend_config_file : terraform/prod.tfvars
           requires:
             - terraform/validate
       - terraform/apply:
