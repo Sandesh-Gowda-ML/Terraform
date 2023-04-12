@@ -5,18 +5,19 @@ workflows:
   deploy_infrastructure:
     jobs:
       - terraform/init:
+          context: Terraform
           path: .
       - terraform/fmt:
           checkout: true
-          context: terraform
+          context: Terraform
       - terraform/validate:
           checkout: true
-          context: terraform
+          context: Terraform
           requires:
             - terraform/fmt
       - terraform/plan:
           checkout: true
-          context: terraform
+          context: Terraform
           path: terraform
           persist-workspace: true
           var_file : prod.tfvars
