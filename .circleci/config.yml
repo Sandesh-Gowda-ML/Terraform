@@ -19,7 +19,7 @@ workflows:
           context: terraform
           path: terraform
           persist-workspace: true
-          var_file : terraform/prod.tfvars
+          var_file : prod.tfvars
           requires:
             - terraform/validate
       - terraform/apply:
